@@ -47,7 +47,16 @@ FROM pokemons p, pokemon_trainer pt
 WHERE pt.pokemon_id = p.id 
 AND pt.trainerID = 303;
 
--- How many pokemon have a secondary type `Poison`
+-- How many pokemon have a secondary type `Poison` 31
+SELECT COUNT(*) AS pokemons_with_secondary_type_posion
+FROM pokemons p
+JOIN types t ON t.id = p.secondary_type
+WHERE t.name = 'Poison';
+
+SELECT COUNT(*) AS p_with_sec_type_poison
+FROM pokemons p, types t
+WHERE t.id = p.secondary_type
+AND t.name = 'Poison';
 -- What are all the primary types and how many pokemon have that type?
 -- How many pokemon at level 100 does each trainer with at least one level 100 pokemone have? 
 -- (Hint: your query should not display a trainer
