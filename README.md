@@ -1,7 +1,8 @@
-# MySQL Pokemon Report Queries
+# Postgresql Pokemon Report Queries
+*This repo has been modified from its original state. Thank you to Zip Code Wilmington for providing this awesome practice lab*
 
 ### Goals
-* Become proficient selecting data out of a mysql database
+* Become proficient selecting data out of a postgres database
 * Become comfortable performing a SQL join
 * Be able to format SQL output as a readable report
 
@@ -10,10 +11,9 @@
 ### Part 1: Importing data
 Directions:
 
-* In DataGrip, [connect to your local mysql instance](https://www.jetbrains.com/help/idea/connecting-to-a-database.html#mysql)
-* Create your pokemon schema
-* Unpack the pokemon_sql.zip files
-* One by one execute these files making sure to check your pokemon schema
+* Use the sql files in here which have been formatted from the original to work in postgresql
+* Create a db and import the files one by one totaling 4 tables
+* Explore the data and continue with the original instructions outlined below
 
 From here you should have all the pokemon data in your mysql schema. Feel free to explore the data and perform a few select statements to see what the data looks like.
 
