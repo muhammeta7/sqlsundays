@@ -15,7 +15,7 @@ Directions:
 * Create a db and import the files one by one totaling 4 tables
 * Explore the data and continue with the original instructions outlined below
 
-From here you should have all the pokemon data in your mysql schema. Feel free to explore the data and perform a few select statements to see what the data looks like.
+From here you should have all the pokemon data in your postgresql schema. Feel free to explore the data and perform a few select statements to see what the data looks like.
 
 ### Part 2: Simple Selects and Counts
 
