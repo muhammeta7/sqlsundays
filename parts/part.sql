@@ -58,8 +58,20 @@ FROM pokemons p, types t
 WHERE t.id = p.secondary_type
 AND t.name = 'Poison';
 -- What are all the primary types and how many pokemon have that type?
+SELECT t.name AS primary_type, COUNT(*) AS poke_per_type
+FROM pokemons p 
+JOIN types t ON t.id = p.primary_type
+GROUP BY t.name
+ORDER BY poke_per_type DESC;
+
 -- How many pokemon at level 100 does each trainer with at least one level 100 pokemone have? 
--- (Hint: your query should not display a trainer
+-- (Hint: your query should not display a trainer)
+SELECT t.trainername AS trainer, COUNT(*) AS num_of_level_100_pokemon
+FROM pokemon_trainer pt 
+JOIN trainers t ON pt.trainerID = t.trainerID
+WHERE pokelevel = 100
+GROUP BY t.trainerID;
+
 -- How many pokemon only belong to one trainer and no other?
 
 
