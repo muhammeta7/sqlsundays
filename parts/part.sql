@@ -73,7 +73,7 @@ WHERE pokelevel = 100
 GROUP BY t.trainerID;
 
 -- How many pokemon only belong to one trainer and no other?
+SELECT DISTINCT pokemon_id
+FROM pokemon_trainer
+GROUP BY pokemon_id HAVING COUNT(*) = 1;
 
-
-
--- pokemons, trainers, types, pokemon_trainer
