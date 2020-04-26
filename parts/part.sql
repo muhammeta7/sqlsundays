@@ -31,6 +31,11 @@ FROM types t
 JOIN pokemons p ON t.id = p.secondary_type
 WHERE p.name = 'Rufflet';
 
+SELECT pokemons.name,t.name
+FROM types t, pokemons 
+WHERE t.id = pokemons.secondary_type
+AND pokemons.name = 'Rufflet';
+
 -- What are the names of the pokemon that belong to the trainer with trainerID 303?
 -- How many pokemon have a secondary type `Poison`
 -- What are all the primary types and how many pokemon have that type?
